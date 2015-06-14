@@ -1,1 +1,334 @@
-My Page
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Setup and get started with Rails</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="img/home.jpg">
+					<h1>Get started with Rails</h1>
+					<h3>And build your first simple app.</h3>
+					<p>
+						<small>Created by <a href="http://coderfactory.com" target="_blank">Coder Factory</a> / <a href="http://twitter.com/coderfactory" target="_blank">@coderfactory</a> / <a href="https://facebook.com/thecoderfactory.com" target="_blank">Facebook page</a> / <a href="https://github.com/TheCoderFactory" target="_blank">Github</a></small>
+					</p>
+					<p>
+						<small>Presented by Peter Argent</a> / <a href="http://twitter.com/pedrogrande" target="_blank">@pedrogrande</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Welcome to Ruby on Rails</h2>
+					<h4>Agenda</h4>
+					<ol>
+						<li>Why learn to code?</li>
+						<li>What is Ruby on Rails</li>
+						<li>A quick demo</li>
+						<li>The development environment</li>
+						<li>Setup your environment</li>
+						<li>Create your first Rails web application</li>
+					</ol>
+				</section>
+
+				<section>
+					<section>
+						<h2>Why learn to code?</h2>
+						<p>Learning to code, changes your life.</p>
+						<p class="fragment roll-in highlight-blue">Once you know how to build apps with code, a whole new world of possibilities open up for you and you will never look back.</p>
+						<br>
+					</section>
+					<section>
+					<h2>How you will feel</h2>
+					<ul>
+						<li>Overwhelmed</li> 
+						<li>Confused</li> 
+						<li>Frustrated</li>
+						<li>Annoyed</li>
+						<li>Surprised</li> 
+						<li>Excited</li> 
+						<li>Amazed</li> 
+						<li>Joyous</li>
+					</ul>
+
+					</section>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>What is Ruby on Rails?</h2>
+						<p>"Ruby on Rails is an open-source web application framework that is optimised for developer happiness and sustainable productivity. It's lets you write beautiful code by favouring convention over configuration."</p>
+						<p><small><a href="http://rubyonrails.org" target="_blank">Rubyonrails.org</a></small></p>
+						<br>
+						
+					</section>
+					<section>
+						<h2>Ruby</h2>
+						<p>Ruby is a dynamic, reflective, object-oriented, general-purpose programming language. It was designed and developed in the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.</p>
+						<p><small><a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">http://en.wikipedia.org/wiki/Ruby_(programming_language)</a></small></p>
+					</section>
+					<section>
+						<h2>Rails</h2>
+						<p>David Heinemeier Hansson (DHH) extracted Ruby on Rails from his work on Basecamp, a project management tool by 37signals.</p>
+						<p>It was first released as open source in July 2004.</p>
+						<p>Uses well-known software engineering patterns and principles, such as:</p> 
+						<ul>
+							<li>active record</li>
+							<li>convention over configuration (CoC)</li>
+							<li>don't repeat yourself (DRY)</li>
+							<li>model–view–controller (MVC)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Web application framework</h2>
+						<p>A software framework that is designed to support the development of dynamic websites, web applications, web services and web resources.</p>
+						<p>Frameworks provide libraries for database access, templating frameworks and session management, and they often promote code reuse.</p>
+					</section>
+					<section>
+						<h2>Rails greatness</h2>
+						<p>Ruby on Rails is a breakthrough in lowering the barriers of entry to programming.</p>
+						<p>"Powerful web applications that formerly might have taken weeks or months to develop can be produced in a matter of days."</p>
+						<p><small>-Tim O'Reilly, Founder of O'Reilly Media</small></p>
+					</section>
+				</section>
+
+				<section>
+					<h2>A quick demo</h2>
+					<p>
+						Witness the amazingness of Rails!</p>
+					</p>
+				</section>
+
+				<section>
+					<h2>The development environment</h2>
+					<p>
+						A development environment is the set of tools and software a developer uses when creating software.
+					</p>
+					<p>For Ruby on Rails development:</p>
+					<ol>
+						<li>Interpreter - Ruby language interpreter - terminal</li>
+						<li>Text editor - to edit the code</li>
+						<li>Local server - web and database servers</li>
+						<li>Browser - to view application</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Setup your environment</h2>
+					<p>
+						Mac: <a href="https://github.com/TheCoderFactory/rails-setup-for-mac" target="_blank">Mac</a>
+		
+					</p>
+					<p>
+						Mac: <a href="https://github.com/TheCoderFactory/rails-setup-for-windows" target="_blank">Windows</a>
+
+					</p>
+					<br>
+					<p>Download a text editor. I recommend <a href="http://www.sublimetext.com/3" target="_blank">Sublime Text 3</a>. Github's <a href="https://atom.io/" target="_blank">Atom</a> is also good.</p>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Create your first application</h2>
+					</section>
+					<section>
+						<h3>1. Open your terminal or command prompt.</h3>
+						<p>In Mac: Press Cmd + Spacebar, type <strong>terminal</strong> and hit enter.</p>
+						<p>In Windows: Start button, type <strong>cmd</strong> and hit enter.</p>
+					</section>
+					<section>
+						<h3>2. Create a new directory for your apps.</h3>
+						<p>In your terminal/command prompt, type <strong>mkdir apps</strong></p>
+						<p>Change into this new directory by typing <strong>cd apps</strong></p>
+					</section>
+					<section>
+						<h3>3. Create your first Rails app</h3>
+						<p>Type: <strong>rails new burgerapp</strong> in your terminal.</p>
+						<p>Note: this is the Rails command to create a new app. The third word is the name of your application - it cannot have spaces in the name.</p>
+						<p>You will see a script being run which creates a bunch of files and gets the latest <em>gems</em>.
+					</section>
+					<section>
+						<h3>4. Starting your application</h3>
+						<p>Type: <strong>rails start</strong> (or <strong>rails s</strong> is a shortcut).</p>
+						<p>Open your browser and enter <strong>localhost:3000</strong> in the address bar.</p>
+						<img src="img/welcome.png">
+					</section>
+					<section>
+						<h3>5. Open your application code in your text editor.</h3>
+						<p>For Sublime Text on Mac</p>
+						<ul>
+							<li>Choose File > Open</li>
+							<li>Find your project folder, select it and click the Open button</li>
+						</ul>
+						<p>For Sublime Text on Windows</p>
+						<ul>
+							<li>Choose File > Open Folder</li>
+							<li>Find your project folder, select it and click on Open.</li>
+						</ul>
+					</section>
+					<section>
+						<h3>6. Open a new terminal window/tab.</h3>
+						<p>So you can leave your Rails server running while doing new commands.</p>
+						<p>Back in your terminal, open a new tab (Mac: <strong>Cmd+t</strong>, Windows: <strong>Start > cmd</strong>).</p>
+						<p>Check that your in your application folder</p>
+						<p>Mac: <strong>pwd</strong> will show your path (Present Working Directory)</p>
+						<p>If not in correct directory, you will need to use the <strong>cd</strong> command to get to it. eg. <strong>cd apps/burgerapp</strong>.</p>
+					</section>
+
+					<section>
+						<h3>7. Creating a controller</h3>
+						<p>Type: <strong>rails generate controller home index</strong></p>
+						<p>This Rails commmand generates some files and inserts some code in your app.</p>
+						<ul>
+							<li>app/controllers/home_controller.rb</li>
+							<li>app/views/home/index.html.erb</li>
+							<li>config/routes.rb</li>
+						</ul>
+					</section>
+					<section>
+						<h3>8. Check your browser</h3>
+						<p>In your browser, go to: <strong>localhost:3000/home/index</strong></p>
+						<p>Edit the page you see by going to Sublime and finding <strong>app/views/home/index.html.erb</strong></p>
+						<p>When you save the HTML, refresh your browser and see the changes you have made.</p>
+					</section>
+					<section>
+						<h3>9. Change the routes</h3>
+						<p>In Sublime, go to <strong>config/routes.rb</strong></p>
+						<p>Find the line that looks like this: # root 'welcome#index'</p>
+						<p>Remove the # and change the code: <pre><code>root 'home#index'</code></pre></p>
+						<p>In your browser, return to <strong>localhost:3000</strong></p>
+					</section>
+					<section>
+						<h3>10. Add a burger database to your application</h3>
+						<p>In your terminal, type: <strong>rails g scaffold Burger name description:text price:decimal</strong></p>
+						<p>Be careful and make sure the command is exactly correct before hitting enter.</p>
+						<p>This code creates a bunch of files that will help you enter burgers into the app.</p>
+					</section>
+					<section>
+						<h3>11. Create the database table with a Rails command</h3>
+						<p>In your terminal, type: <strong>rake db:migrate</strong></p>
+						<p>This is a rake command that follows the instructions in /db/migrate/....rb</p>
+					</section>
+					<section>
+						<h3>12. See the new pages of your application.</h3>
+						<p>In your browser, go to <strong>localhost:3000/burgers</strong></p>
+						<p>Add some burgers to your application and see how it works.</p>
+						<p>You can find and edit the code in Sublime at <strong>app/views/burgers</strong></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Resources</h2>
+						<ol>
+							<li>Free online resources & tutorials</li>
+							<li>Paid online resources & tutorials</li>
+							<li>Coder Factory workshops & courses</li>
+							<li>Coder Factory X workshops</li>
+						</ol>
+					</section>
+					<section>
+						<h3>Free resources</h3>
+						<p><a href="http://guides.rubyonrails.org/" target="_blank">Ruby on Rails Guides</a>. Check the Getting Started tutorial.</p>
+						<p><a href="https://www.railstutorial.org/" target="_blank">Michael Hartl's Ruby on Rails</a> tutorial.</p>
+						<p><a href="http://learnrubythehardway.org/book/" target="_blank">Learn Ruby the Hard Way</a></p>
+						<p><a href="http://getbootstrap.com/getting-started/" target="_blank">Bootstrap</a></p>
+						<p><a href="http://railscasts.com/" target="_blank">Railscasts - videos</a></p>
+
+					</section>
+					<section>
+					<h3>Paid resources</h3>
+						<p>Team treehouse</p>
+						<p>CodeSchool</p>
+
+					</section>
+					<section>
+						<h3>Coder Factory workshops</h3>
+						<ul>
+							<li><a href="http://coderfactory.com/courses/workshops/learn-to-code-weekend-workshop">Learn to Code weekend workshop</a></li>
+							<li>Wordpress workshop</li>
+							<li>Web design workshop</li>
+							<li>Highschool Coder</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Coder Factory courses</h3>
+						<ul>
+							<li><a href="http://coderfactory.com/courses/part-time-courses/web-app-developer-pt" target="_blank">Web App Developer PT</a></li>
+							<li><a href="http://coderfactory.com/fast-track">Fast Track</a> - full time</li>
+						</ul>
+					</section>
+
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+
+</html>
