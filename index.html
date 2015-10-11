@@ -41,21 +41,25 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-background="img/home.jpg">
-					<h1>Get started with Rails</h1>
-					<h3>And build your first simple app.</h3>
+					<h1>Coding Kickstarter</h1>
+					<p>WIFI: CoderFactory & CoderFactory5G
+					<br>
+					PASSWORD: codingisfun</p>
 					<p>
 						<small>Created by <a href="http://coderfactory.com" target="_blank">Coder Factory</a> / <a href="http://twitter.com/coderfactory" target="_blank">@coderfactory</a> / <a href="https://facebook.com/thecoderfactory.com" target="_blank">Facebook page</a> / <a href="https://github.com/TheCoderFactory" target="_blank">Github</a></small>
 					</p>
 					<p>
 						<small>Presented by Peter Argent</a> / <a href="http://twitter.com/pedrogrande" target="_blank">@pedrogrande</a></small>
 					</p>
-					<p><a href="http://bit.ly/coder-factory-free-workshop">http://bit.ly/coder-factory-free-workshop</a></p>
+					<p><a href="http://bit.ly/coding-kickstarter">bit.ly/coding-kickstarter</a></p>
+					<p><a href="http://thecoderfactory.github.io/free-get-started-with-rails-workshop">http://thecoderfactory.github.io/free-get-started-with-rails-workshop</a></p>
 				</section>
 
 				<section>
 					<h2>Welcome to Ruby on Rails</h2>
 					<h4>Agenda</h4>
 					<ol>
+						<li>Introductions</li>
 						<li>Why learn to code?</li>
 						<li>What is Ruby on Rails</li>
 						<li>A quick demo</li>
@@ -106,13 +110,7 @@
 						<h2>Rails</h2>
 						<p>David Heinemeier Hansson (DHH) extracted Ruby on Rails from his work on Basecamp, a project management tool by 37signals.</p>
 						<p>It was first released as open source in July 2004.</p>
-						<p>Uses well-known software engineering patterns and principles, such as:</p> 
-						<ul>
-							<li>active record</li>
-							<li>convention over configuration (CoC)</li>
-							<li>don't repeat yourself (DRY)</li>
-							<li>model–view–controller (MVC)</li>
-						</ul>
+						
 					</section>
 					<section>
 						<h2>Web application framework</h2>
@@ -155,7 +153,7 @@
 		
 					</p>
 					<p>
-						Mac: <a href="https://github.com/TheCoderFactory/rails-setup-for-windows" target="_blank">Windows</a>
+						Windows: <a href="https://github.com/TheCoderFactory/rails-setup-for-windows" target="_blank">Windows</a>
 
 					</p>
 					<br>
@@ -169,13 +167,13 @@
 					</section>
 					<section>
 						<h3>1. Open your terminal or command prompt.</h3>
-						<p>In Mac: Press Cmd + Spacebar, type <strong>terminal</strong> and hit enter.</p>
-						<p>In Windows: Start button, type <strong>cmd</strong> and hit enter.</p>
+						<p>In Mac: Press Cmd + Spacebar, type <code>terminal</code> and hit enter.</p>
+						<p>In Windows: Start button, type <code>cmd</code> and hit enter.</p>
 					</section>
 					<section>
 						<h3>2. Create a new directory for your apps.</h3>
-						<p>In your terminal/command prompt, type <strong>mkdir apps</strong></p>
-						<p>Change into this new directory by typing <strong>cd apps</strong></p>
+						<p>In your terminal/command prompt, type <code>mkdir apps</code></p>
+						<p>Change into this new directory by typing <code>cd apps</code></p>
 					</section>
 					<section>
 						<h3>3. Create your first Rails app</h3>
@@ -214,7 +212,7 @@
 
 					<section>
 						<h3>7. Creating a controller</h3>
-						<p>Type: <strong>rails generate controller home index</strong></p>
+						<p>Type: <code>rails generate controller home index</code></p>
 						<p>This Rails commmand generates some files and inserts some code in your app.</p>
 						<ul>
 							<li>app/controllers/home_controller.rb</li>
@@ -237,14 +235,14 @@
 					</section>
 					<section>
 						<h3>10. Add a burger database to your application</h3>
-						<p>In your terminal, type: <strong>rails g scaffold Burger name description:text price:decimal</strong></p>
+						<p>In your terminal, type: <code>rails g scaffold Burger name description:text price:decimal</code></p>
 						
 						<p>Be careful and make sure the command is exactly correct before hitting enter.</p>
 						<p>This code creates a bunch of files that will help you enter burgers into the app.</p>
 					</section>
 					<section>
 						<h3>11. Create the database table with a Rails command</h3>
-						<p>In your terminal, type: <strong>rake db:migrate</strong></p>
+						<p>In your terminal, type: <code>rake db:migrate</code></p>
 						<p>This is a rake command that follows the instructions in /db/migrate/....rb</p>
 					</section>
 					<section>
