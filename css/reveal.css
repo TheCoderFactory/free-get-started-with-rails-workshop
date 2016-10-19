@@ -125,7 +125,9 @@ body {
 
 .reveal .slides section .fragment.highlight-blue.visible {
   color: #1b91ff; }
-
+.highlight-blue {
+  color: #1b91ff;
+}
 .reveal .slides section .fragment.highlight-current-red.current-fragment {
   color: #ff2c2d; }
 
